@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etInputUmur"
+        android:layout_width="234dp"
+        android:layout_height="71dp"
+        android:ems="10"
+        android:hint="masukkan tahun kelahiran"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="74dp" />
+
+    <TextView
+        android:id="@+id/tvUmur"
+        android:layout_width="113dp"
+        android:layout_height="20dp"
+        android:text="Umur ="
+        app:layout_constraintBottom_toTopOf="@+id/btnHitung"
+        app:layout_constraintTop_toBottomOf="@+id/etInputUmur"
+        tools:layout_editor_absoluteX="149dp" />
+
+    <Button
+        android:id="@+id/btnHitung"
+        android:layout_width="142dp"
+        android:layout_height="50dp"
+        android:text="Hitung"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="314dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
